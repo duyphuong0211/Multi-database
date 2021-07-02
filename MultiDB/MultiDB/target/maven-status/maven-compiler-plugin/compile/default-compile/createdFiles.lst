@@ -1,0 +1,8 @@
+com\example\MultiDB\database\postgresql\repository\CountryRepository.class
+com\example\MultiDB\config\MySqlConfig.class
+com\example\MultiDB\database\mysql\repository\CategoryRepository.class
+com\example\MultiDB\config\PostgreSqlConfig.class
+com\example\MultiDB\MultiDbApplication.class
+com\example\MultiDB\database\mysql\domain\CategoryEntity.class
+com\example\MultiDB\database\postgresql\domain\CountryEntity.class
+com\example\MultiDB\controller\TestController.class

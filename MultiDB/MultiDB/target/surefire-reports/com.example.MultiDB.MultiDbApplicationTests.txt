@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.MultiDB.MultiDbApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.534 s <<< FAILURE! - in com.example.MultiDB.MultiDbApplicationTests
+contextLoads  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController' defined in file [D:\021120\MultiDB\MultiDB\target\classes\com\example\MultiDB\controller\TestController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'countryRepository' defined in com.example.MultiDB.database.postgresql.repository.CountryRepository defined in @EnableJpaRepositories declared on PostgreSqlConfig: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.example.MultiDB.database.postgresql.domain.CountryEntity
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'countryRepository' defined in com.example.MultiDB.database.postgresql.repository.CountryRepository defined in @EnableJpaRepositories declared on PostgreSqlConfig: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.example.MultiDB.database.postgresql.domain.CountryEntity
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.example.MultiDB.database.postgresql.domain.CountryEntity
+
